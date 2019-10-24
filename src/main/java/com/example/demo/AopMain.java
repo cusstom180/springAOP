@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -14,7 +13,7 @@ public class AopMain {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
 		
 		ShapeService shapeService = ctx.getBean("shapeService", ShapeService.class);
-		System.out.println("CIRCLE NAME: " + shapeService.getCircle());
+		System.out.println("Circle NAME: " + shapeService.getCircle().getName());
 		
 	}
 

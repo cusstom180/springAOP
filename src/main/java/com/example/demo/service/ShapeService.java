@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.example.demo.model.Circle;
@@ -8,6 +9,7 @@ import com.example.demo.model.Triangle;
 @Component
 public class ShapeService {
 	
+//	@Autowired
 	private Circle circle;
 	private Triangle triangle;
 	
